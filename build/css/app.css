@@ -1,0 +1,126 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.contratame a {
+  display: block;
+  text-decoration: none;
+  background-color: #1ec653;
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  border: 3px solid #1ec653;
+  transform: translate(-5px, -5px);
+  box-shadow: 3px 3px 0.1px black;
+  transition: all 0.5s ease;
+}
+.contratame a:hover {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}
+
+.navegacion-principal {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.sol, .icono {
+  width: 2rem;
+}
+
+.avioncito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  max-width: 60rem;
+  height: 15rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.avioncito img {
+  width: 8rem;
+  height: auto;
+}
+
+.barra-perfil-link {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.barra-perfil-link img {
+  width: 10rem;
+  border-radius: 50%;
+  margin-top: -3rem;
+}
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  max-width: 60rem;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.texto-header {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.navegacion-secundaria {
+  max-width: 40rem;
+  padding-top: 0.9rem;
+  margin: 0 auto;
+}
+.navegacion-secundaria .link {
+  color: #1ec653;
+  cursor: pointer;
+}
+.navegacion-secundaria .link span:hover {
+  border-bottom: 4px solid #1ec653;
+}
+.navegacion-secundaria a {
+  text-decoration: none;
+  color: #716d6d;
+  margin-right: 0.5rem;
+  cursor: text;
+}
+
+#avionImg {
+  transition: all 0.3s ease;
+}
+
+.mover-avion {
+  transform: translateX(-500px);
+  opacity: 0;
+}
+
+.mover-avion-reverse {
+  transform: translateX(500px);
+  opacity: 0;
+}
+
+.mover-avion-reverse-on {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=app.css.map */
